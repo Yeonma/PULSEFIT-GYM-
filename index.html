@@ -1,0 +1,468 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PULSEFIT Official Website</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                PULSE<span>FIT</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#workouts">Workouts</a></li>
+                <li><a href="#trainers">Trainers</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#bmi">BMI</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button id="menuBtn">☰</button>
+
+        </nav>
+    </header>
+
+
+    <!-- HOME -->
+    <section id="home" class="hero">
+        <video class="background-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true" tabindex="-1">
+            <source src="gym.mp4" type="video/mp4">
+        </video>
+
+        <div class="hero-content">
+
+            <p class="small-title">WELCOME TO PULSEFIT</p>
+
+            <h1>
+                LET'S GET
+                <span>STRONG</span>
+                TOGETHER!
+      </h1>
+         
+		   
+			<p>Your neighborhood gym in Ugbog, Gabaldon, Nueva Ecija. From the farm to the town, let’s get stronger together.</p>
+			<p>Open from 7:00 AM - 10:00 PM</p>
+
+            <div class="hero-buttons">
+                <a href="#pricing" class="btn">JOIN NOW</a>
+                <a href="#workouts" class="btn-outline">VIEW WORKOUTS</a>
+              
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+
+        <div class="section-title">
+            <p>WHO WE ARE</p>
+            <h2>ABOUT <span>PULSEFIT</span></h2>
+        </div>
+
+        <div class="about-container">
+
+            <div class="about-text">
+
+                <h3>More Than Just A Gym, You Are Family Here</h3>
+				
+
+
+                <p>
+                    PULSEFIT is a fitness center in Ugbog,Gabaldon, Nueva Ecija, made for our neighbors who want
+                    to get stronger, build endurance, and improve their health
+                    without traveling to a far-away city.
+                </p>
+
+                <p>
+                    Whether you're a student, farmer, employee, an OFW home on
+                    vacation, or just getting started, there is a place for you here.
+                    Our coaches and equipment are ready to support you: sweat today,
+                    feel better tomorrow.
+                </p>
+
+                <div class="stats">
+				  
+                    <div>
+                        <strong>2+</strong>
+                        <p>Years Experience</p>
+                    </div>
+
+                    <div>
+                        <strong>3</strong>
+                        <p>Expert Trainers</p>
+                    </div>
+
+                    <div>
+                        <strong>1K+</strong>
+                        <p>Members</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- WORKOUTS -->
+    <section id="workouts" class="section dark-section">
+
+        <div class="section-title">
+            <p>TRAIN HARD</p>
+            <h2>OUR <span>WORKOUTS</span></h2>
+        </div>
+
+        <div class="cards">
+
+            <article class="card workout-card">
+                <img class="workout-image" src="images/strength-training.jpg"
+                     alt="Strength training with weights">
+                <div class="workout-card-content">
+                    <h3>Strength Training</h3>
+                    <p class="workout-summary">
+                        Build muscle and strength with structured weight training, ready for whatever life lifts your way!
+                    </p>
+                    <button type="button" class="workout-toggle"
+                            aria-expanded="false" aria-controls="details-strength"
+                            onclick="toggleWorkoutDetails(this)">
+                        Learn More
+                    </button>
+                    <div class="workout-details" id="details-strength" hidden>
+                        <p><strong>About:</strong> Build strength and muscle using squats, presses, rows, and other free-weight or machine movements.</p>
+                        <p><strong>Benefits:</strong> Supports muscular strength, bone health, and everyday tasks, from carrying sacks to climbing stairs.</p>
+                        <p><strong>Good for:</strong> Beginners and experienced members. Start with manageable weights and focus on proper form.</p>
+                        <p><strong>Example session:</strong> Warm-up, squats, chest press, seated rows, shoulder press, and a cool-down.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card workout-card">
+                <img class="workout-image" src="images/cardio.jpg"
+                     alt="Cardio workout">
+                <div class="workout-card-content">
+                    <h3>Cardio</h3>
+                    <p class="workout-summary">
+                        Build your stamina so you do not run out of breath, whether at work, at school, or on the court.
+                    </p>
+                    <button type="button" class="workout-toggle"
+                            aria-expanded="false" aria-controls="details-cardio"
+                            onclick="toggleWorkoutDetails(this)">
+                        Learn More
+                    </button>
+                    <div class="workout-details" id="details-cardio" hidden>
+                        <p><strong>About:</strong> Raise your heart rate through brisk walking, cycling, jogging, rowing, or the elliptical machine.</p>
+                        <p><strong>Benefits:</strong> Helps develop stamina and supports heart and lung fitness.</p>
+                        <p><strong>Good for:</strong> Anyone who wants more endurance or a more active routine. Adjust the pace to your fitness level.</p>
+                        <p><strong>Example session:</strong> 5-minute easy warm-up, 15–25 minutes at a comfortable pace, then a cool-down.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card workout-card">
+                <img class="workout-image" src="images/boxing.jpg"
+                     alt="Boxing training session">
+                <div class="workout-card-content">
+                    <h3>Boxing</h3>
+                    <p class="workout-summary">
+                        Sharpen your speed, coordination, stamina, and confidence. Fight for a stronger you!
+                    </p>
+                    <button type="button" class="workout-toggle"
+                            aria-expanded="false" aria-controls="details-boxing"
+                            onclick="toggleWorkoutDetails(this)">
+                        Learn More
+                    </button>
+                    <div class="workout-details" id="details-boxing" hidden>
+                        <p><strong>About:</strong> Practice footwork, shadowboxing, bag work, and basic combinations in a safe, guided setting.</p>
+                        <p><strong>Benefits:</strong> Develops coordination, conditioning, balance, and full-body movement.</p>
+                        <p><strong>Good for:</strong> Anyone who wants to learn boxing or improve fitness. Beginners should learn technique before increasing intensity.</p>
+                        <p><strong>Example session:</strong> Warm-up, footwork drills, shadowboxing rounds, bag practice, and cool-down.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card workout-card">
+                <img class="workout-image" src="images/flexibility.jpg"
+                     alt="Stretching and flexibility exercise">
+                <div class="workout-card-content">
+                    <h3>Flexibility</h3>
+                    <p class="workout-summary">
+                        Move comfortably and loosen up a stiff body with stretching and mobility exercises.
+                    </p>
+                    <button type="button" class="workout-toggle"
+                            aria-expanded="false" aria-controls="details-flexibility"
+                            onclick="toggleWorkoutDetails(this)">
+                        Learn More
+                    </button>
+                    <div class="workout-details" id="details-flexibility" hidden>
+                        <p><strong>About:</strong> Gentle stretches and mobility drills that help your joints move comfortably.</p>
+                        <p><strong>Benefits:</strong> Supports mobility, posture, and comfort in daily activities and exercise, especially after a long day of work or standing.</p>
+                        <p><strong>Good for:</strong> All levels. Move slowly, breathe normally, and never force a stretch or push into pain.</p>
+                        <p><strong>Example session:</strong> Gentle warm-up, hip and shoulder mobility, hamstring and calf stretches, then relaxed breathing.</p>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- TRAINERS -->
+    <section id="trainers" class="section">
+
+        <div class="section-title">
+            <p>MEET THE TEAM</p>
+            <h2>OUR <span>TRAINERS</span></h2>
+        </div>
+
+        <div class="trainers">
+
+            <div class="trainer">
+                <img class="trainer-image" src="images/Angelica.jpg"
+                     alt="Coach Angelica, Strength Coach">
+                <h3>Coach Angelica</h3>
+                <p>Strength Coach</p>
+            </div>
+
+            <div class="trainer">
+                <img class="trainer-image" src="images/John.jpg"
+                     alt="Coach John, Fitness Coach">
+                <h3>Coach John</h3>
+                <p>Fitness Coach</p>
+            </div>
+
+            <div class="trainer">
+                <img class="trainer-image" src="images/Mike.jpg"
+                     alt="Coach Mike, Boxing Coach">
+                <h3>Coach Mike</h3>
+                <p>Boxing Coach</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRICING -->
+    <section id="pricing" class="section dark-section">
+
+        <div class="section-title">
+            <p>MEMBERSHIP</p>
+            <h2>CHOOSE YOUR <span>PLAN</span></h2>
+        </div>
+
+        <div class="pricing">
+
+            <div class="price-card">
+
+                <h3>BASIC</h3>
+
+                <div class="price">
+                    ₱600
+                    <small>/month</small>
+                </div>
+
+                <ul>
+                    <li>✓ Gym Access</li>
+                    <li>✓ Locker Access</li>
+                    <li>✓ Cardio Area</li>
+                    <li>✕ Personal Trainer</li>
+                </ul>
+
+                <button onclick="joinPlan('Basic')">
+                    JOIN NOW
+                </button>
+
+            </div>
+
+
+            <div class="price-card featured">
+
+                <div class="popular">POPULAR</div>
+
+                <h3>PRO</h3>
+
+                <div class="price">
+                    ₱1,299
+                    <small>/month</small>
+                </div>
+
+                <ul>
+                    <li>✓ Unlimited Gym Access</li>
+                    <li>✓ Locker Access</li>
+                    <li>✓ All Equipment</li>
+                    <li>✓ Group Classes</li>
+                    <li>✓ Personal Trainer</li>
+                </ul>
+
+                <button onclick="joinPlan('Pro')">
+                    JOIN NOW
+                </button>
+
+            </div>
+
+
+            <div class="price-card">
+
+                <h3>ELITE</h3>
+
+                <div class="price">
+                    ₱1,999
+                    <small>/month</small>
+                </div>
+
+                <ul>
+                    <li>✓ Unlimited Gym Access</li>
+                    <li>✓ Personal Trainer</li>
+                    <li>✓ Custom Workout Plan</li>
+                    <li>✓ Nutrition Guidance</li>
+                    <li>✓ VIP Locker</li>
+                </ul>
+
+                <button onclick="joinPlan('Elite')">
+                    JOIN NOW
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BMI CALCULATOR -->
+    <section id="bmi" class="section">
+
+        <div class="section-title">
+            <p>FITNESS TOOL</p>
+            <h2>BMI <span>CALCULATOR</span></h2>
+        </div>
+
+        <div class="bmi-box">
+
+            <label>Weight (kg)</label>
+            <input
+                type="number"
+                id="weight"
+                placeholder="Example: 70"
+            >
+
+            <label>Height (cm)</label>
+            <input
+                type="number"
+                id="height"
+                placeholder="Example: 175"
+            >
+
+            <button onclick="calculateBMI()">
+                CALCULATE BMI
+            </button>
+
+            <div id="bmiResult"></div>
+
+        </div>
+
+    </section>
+
+
+
+  <!-- CONTACT -->
+	 <section id="contact" class="section dark-section">
+
+        <div class="section-title">
+            <p>GET STARTED</p>
+            <h2>JOIN <span>PULSEFIT</span></h2>
+        </div>
+
+        <form id="membershipForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Full Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Email Address"
+                required
+            >
+
+            <input
+				type="tel"
+				id="phone"
+				placeholder="09123456789"
+				maxlength="11"
+				pattern="[0-9]{11}"
+				inputmode="numeric"
+				required
+			>
+
+            <select id="plan">
+               
+                <option value="">Choose Membership</option>
+                <option value="Basic">Basic - ₱600/month</option>
+                <option value="Pro">Pro - ₱1,299/month</option>
+                <option value="Elite">Elite - ₱1,999/month</option>
+
+            </select>
+
+
+
+            <button type="submit">
+                SUBMIT MEMBERSHIP
+            </button>
+
+        </form>
+
+        <p id="formMessage"></p>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="logo">
+            PULSE<span>FIT</span>
+        </div>
+
+        <p>
+            Train hard. Stay strong. Live better.
+        </p>
+
+        <p>
+            © 2026 PULSEFIT GYM. All Rights Reserved.
+        </p>
+		
+		<p>
+			Visual media sourced via Pinterest and TikTok for academic demonstration purposes only
+		</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
